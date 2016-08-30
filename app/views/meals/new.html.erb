@@ -1,0 +1,21 @@
+<h1>Enter Your meal Details</h1>
+<%= simple_form_for @meal do |f| %>
+  <%= f.input :sku %>
+  <%= f.input :description %>
+  <%= f.input :calories_per_unit %>
+  <%= f.input :protien_per_unit %>
+  <%= f.input :fat_per_unit %>
+  <%= f.input :carbohydrates_per_unit %>
+  <%= f.input :influences %>
+  <%= f.input :cost_to_produce %>
+  <%= f.input :sell_price%>
+  <%= f.input :general_rating_health%>
+  <%= f.input :chef_name%>
+  <%= f.submit 'Create', class: 'btn btn-danger' %>
+<% end %>
+
+
+
+
+
+

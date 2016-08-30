@@ -1,12 +1,34 @@
-      <h1><%= @meal.sku %> </h1>
-      <h1><%= @meal.description %> </h1>
-      <h1><%= @meal.calories_per_unit %> </h1>
-      <h1><%= @meal.protien_per_unit %> </h1>
-      <h1><%= @meal.fat_per_unit %> </h1>
-      <h1><%= @meal.carbohydrates_per_unit %> </h1>
-      <h1><%= @meal.influences %> </h1>
-      <h1><%= @meal.cost_to_produce %> </h1>
-      <h1><%= @meal.sell_price %> </h1>
-      <h1><%= @meal.general_rating_health %> </h1>
+     
+<div class="container">
+  
+  <div class="panel-group">
+    <div class="panel panel-default">
+    <h2>Meal</h2>
+  <p> SKU <h1><%= @meal.sku %> </h1> Description 
+      <h1><%= @meal.description %> </h1></p>
+      <div class="panel-heading">Creation details</div>
+      <div class="panel-body"><h1><%= @meal.general_rating_health %> </h1>
       <h1><%= @meal.chef_name  %> </h1>
-      <h1><%= @meal.inspect  %> </h1>
+      <h1><%= @meal.inspect  %> </h1></div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">Pricing </div>
+      <div class="panel-body"> Cost to Produce <h1><%= @meal.cost_to_produce %> </h1> Price 
+      <h1><%= @meal.sell_price %> </h1></div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">Macros</div>
+      <div class="panel-body"> Calories <h1><%= @meal.calories_per_unit %> </h1> Protien
+      <h1><%= @meal.protien_per_unit %> </h1> Fat 
+      <h1><%= @meal.fat_per_unit %> </h1> Carbohydrate
+      <h1><%= @meal.carbohydrates_per_unit %> </h1</div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
