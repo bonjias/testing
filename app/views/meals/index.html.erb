@@ -1,28 +1,30 @@
      
 
+     <% @meal.each do |meal| %>
      <div class="col-xs-6 col-sm-3">
 <div class="container">
      <div class="panel panel-default">
-    <div class="panel-heading"><strong> SKU  <h4><%= @meal.sku %> </h4></strong></div>
+    <div class="panel-heading"><strong><%= meal.description %> SKU  <h4><%= meal.sku %> </h4></strong></div>
     <div class="panel-body">
   </h4> Description 
       <h4> </h4>
       Creation details
-      <h4><%= @meal.general_rating_health %> </h4>
-      <h4><%= @meal.chef_name  %> </h4>
-      <h4><%= @meal.inspect  %> </h4>
+      <h4><%= meal.general_rating_health %> </h4>
+      <h4><%= meal.chef_name  %> </h4>
+      <h4><%= meal.inspect  %> </h4>
     
-     Cost to Produce <h4><%= @meal.cost_to_produce %> </h4> Price 
-      <h4><%= @meal.sell_price %> </h4>
+     Cost to Produce <h4><%= meal.cost_to_produce %> </h4> Price 
+      <h4><%= meal.sell_price %> </h4>
    
-    Calories <h4><%= @meal.calories_per_unit %> </h4> Protien
-      <h4><%= @meal.protien_per_unit %> </h4> Fat 
-      <h4><%= @meal.fat_per_unit %> </h4> Carbohydrate Influence break down, tatse, history and chemicals       <h4><%= @meal.carbohydrates_per_unit %> </h4>
+    Calories <h4><%= meal.calories_per_unit %> </h4> Protien
+      <h4><%= meal.protien_per_unit %> </h4> Fat 
+      <h4><%= meal.fat_per_unit %> </h4> Carbohydrate Influence break down, tatse, history and chemicals       <h4><%= meal.carbohydrates_per_unit %> </h4>
 
       <%= link_to 'Add Meals', new_meal_path %>
   <%= link_to 'Home', root_path %>
     </div>
-    
+    <% end%>
+
 
 
 

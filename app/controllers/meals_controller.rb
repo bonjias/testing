@@ -4,7 +4,7 @@ def home
 end 
 
 def index
-  @meal = Meal.first
+  @meal = Meal.all
 end 
 def new 
 @meal = Meal.new 
