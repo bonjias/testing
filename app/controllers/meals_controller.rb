@@ -1,5 +1,7 @@
 class MealsController < ApplicationController
 
+def home
+end 
 
 def index
   @meal = Meal.last
