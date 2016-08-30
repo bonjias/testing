@@ -12,9 +12,14 @@
   <h1 class="w3-xxxlarge w3-text-teal">What are you Looking for?></h1>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xxxlarge w3-text-theme">Close <i class="fa fa-remove"></i></a>
   <a href="javascript:void(0)">My Account & orders </a>
-  <a href="javascript:void(0)">Territories and pickup locations</a>
-  <a href="javascript:void(0)">Company Info</a>
-  <a href="javascript:void(0)">Franchise & Investment Oppurtunies</a>
+  <a href="javascript:void(0)"><%= link_to 'Terrirtories', territory_path %>s</a>
+  <a href="javascript:void(0)"> <%= link_to 'Company Info', about_path %></a>
+  <a href="javascript:void(0)"><%= link_to 'Franchise', franchise_path %></a></a>
+  <%= link_to 'Company Info', about_path %>
+<%= link_to 'Franchise', franchise_path %>
+<%= link_to 'Add Meals', new_meal_path %>
+  <%= link_to 'See Meals', meals_path %></h1>
+
 </nav>
 
 <!-- Header -->
@@ -56,6 +61,7 @@
   <p>SOME DANK FUCKIN SHIT IN HERE</p>
   <%= link_to 'Add Meals', new_meal_path %>
   <%= link_to 'See Meals', meals_path %>
+
   </div>
 </div>
 

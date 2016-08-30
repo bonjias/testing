@@ -4,13 +4,20 @@ def home
 end 
 
 def index
-  @meal = Meal.last
-end
-
+  @meal = Meal.first
+end 
 def new 
 @meal = Meal.new 
 end 
 
+def about 
+end 
+
+def franchise
+  end 
+
+def territory
+  end
 
 def create
     Meal.create(meal_params)

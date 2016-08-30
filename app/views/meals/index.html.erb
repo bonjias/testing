@@ -1,7 +1,9 @@
      
+
+     <div class="col-xs-6 col-sm-3">
 <div class="container">
      <div class="panel panel-default">
-    <div class="panel-heading"><strong><%= @meal.description %> SKU  <h4><%= @meal.sku %> </h4></strong></div>
+    <div class="panel-heading"><strong> SKU  <h4><%= @meal.sku %> </h4></strong></div>
     <div class="panel-body">
   </h4> Description 
       <h4> </h4>
@@ -15,13 +17,12 @@
    
     Calories <h4><%= @meal.calories_per_unit %> </h4> Protien
       <h4><%= @meal.protien_per_unit %> </h4> Fat 
-      <h4><%= @meal.fat_per_unit %> </h4> Carbohydrate
-      <h4><%= @meal.carbohydrates_per_unit %> </h4>
+      <h4><%= @meal.fat_per_unit %> </h4> Carbohydrate Influence break down, tatse, history and chemicals       <h4><%= @meal.carbohydrates_per_unit %> </h4>
+
+      <%= link_to 'Add Meals', new_meal_path %>
+  <%= link_to 'Home', root_path %>
     </div>
     
-</div>
-</div>
-
 
 
 
